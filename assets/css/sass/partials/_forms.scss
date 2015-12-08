@@ -1,0 +1,57 @@
+[role="button"] {
+  cursor: pointer;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: semi-bold;
+}
+
+input[type="search"] {
+  box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
+}
+
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"]
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  background-color: white;
+  background-image: none;
+  border: 1px solid $gray-light;
+  display: block;
+  color: $gray-light;
+  font-size: inherit;
+  height: 35px;
+  line-height: $line-height-base;
+  margin-bottom: rhythm(1/2);
+  padding: 6px 12px;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  width: 100%;
+}

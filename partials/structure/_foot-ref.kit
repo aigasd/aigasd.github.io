@@ -1,0 +1,52 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/vendor/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+
+<!-- OUR CUSTOM JS -->
+<script>
+$(function() {
+
+  var sdegree = -55;
+
+  $(window).scroll(function() {
+    sdegree ++ ;
+    sdegree = sdegree + 1 ;
+    var srotate = "rotate(" + sdegree + "deg)";
+    $(".waves").css({
+      "transform" : srotate,
+      "transform-origin" : "50% 50%"
+    });
+  });
+
+});
+</script>
+
+<script>
+var $animation_elements = $('.animated');
+var $window = $(window);
+
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+ 
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+ 
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+      $element.addClass('in-view');
+    }
+  });
+}
+
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+</script>
+
+</body>
+</html>

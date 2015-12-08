@@ -1,0 +1,54 @@
+@mixin vcenterer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+@mixin panel-right($panel-right-bg-color,$panel-right-text-color) {
+  color: $panel-right-text-color;
+  min-height: 20px;
+  padding: gutter();
+  margin-bottom: rhythm();
+  background-color: $panel-right-bg-color;
+  position: relative;
+  z-index: 1;
+  &:before {
+    content: "";
+    background-color: $panel-right-bg-color;
+    width: 100%;
+    height: 0;
+    padding-bottom: 8%;
+    margin-top: -4%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    right: 0;
+    transform: skewY(4deg);
+    z-index: -1;
+  }
+  &:after {
+    content: "";
+    background-color: $panel-right-bg-color;
+    width: 100%;
+    height: 0;
+    padding-bottom: 8%;
+    margin-bottom: -4%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    right: 0;
+    transform: skewY(-4deg);
+    z-index: -1;
+  }
+}

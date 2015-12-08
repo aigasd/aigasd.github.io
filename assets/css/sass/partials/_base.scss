@@ -1,0 +1,69 @@
+@include establish-baseline;
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  background-color: $color-blue;
+  color: $font-color-base;
+  font-family: $font-family;
+  font-size: $font-size-base;
+  font-weight: $font-weight-light;
+  line-height: $line-height-base;
+}
+
+.body-background {
+  background:
+    url(../img/bg-figures.jpg)
+    top center / cover
+    no-repeat
+    fixed
+    $bg-color-base;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+::selection {
+  background: $font-color-base;
+  color: $bg-color-base;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
+}
+
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}

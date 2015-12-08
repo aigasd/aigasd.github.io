@@ -1,0 +1,65 @@
+// Brand Colors
+$color-orange: #ff6c36;
+$color-peach: #fcb79b;
+$color-blue: #101e8e;
+$color-green: #7cdfa8;
+$color-primary: #ff6c36;
+
+//Grayscale
+$black: #000000;
+$gray-darkest: lighten($black, 13.5%);
+$gray-dark: lighten($black, 33.5%);
+$gray: lighten($black, 50%);
+$gray-light: lighten($black, 85%);
+$gray-lightest: lighten($black, 97%);
+
+// Utility Colors
+$font-color-base: #fff;
+$bg-color-base: $color-blue;
+
+$color-error: #d9534f;
+$color-valid: #5cb85c;
+$color-warning: #f2cf1d;
+
+// Compass Vertical Rhythm Settings
+$base-font-size: 16px; // Sets the base font size
+$base-line-height: 24px; // Sets the base line height
+$round-to-nearest-half-line: true; // Allows compass to round to  multiples of 0.5x line height
+$rhythm-unit: "rem"; // Sets rhythm unit to rem. Remove to use default em unit.
+
+// Typography
+$font-family: freight-sans-pro, sans-serif;
+$line-height-base: 1.5;
+
+$font-size-base: $base-font-size;
+
+$font-weight-light: 300; // Adjust to match typeface
+$font-weight-book: 400; // Adjust to match typeface
+$font-weight-semibold: 600; // Adjust to match typeface
+$font-weight-black: 800; // Adjust to match typeface
+
+// Headings
+$heading-font-family: freight-sans-compressed-pro, sans-serif;
+
+$font-size-h1: floor(($font-size-base * 3));
+$font-size-h2: floor(($font-size-base * 1.75));
+$font-size-h3: ceil(($font-size-base * 1.15));
+
+// Blockquotes
+$blockquote-footer-color: $gray-light;
+$blockquote-font-size: ($font-size-base * 1.25);
+$blockquote-border-color: $gray-lightest;
+
+// Buttons
+$btn-namespace: ".button"; //prefix for all classes
+$btn-bgcolor: $color-peach;
+$btn-height: 54px;
+
+$btn-font-color: #ffffff;
+$btn-font-size: ceil(($font-size-base * 1.5));
+$btn-font-weight: $font-weight-semibold;
+$btn-font-family: freight-sans-compressed-pro, sans-serif;;
+
+// Links
+$link-color: $color-peach;
+$link-hover-color: darken($link-color, 10%);

@@ -1,0 +1,19 @@
+.color-orange {
+  color: $color-orange;
+}
+
+.color-peach {
+  color: $color-peach;
+}
+
+.color-blue {
+  color: $color-blue;
+}
+
+.color-green {
+  color: $color-green;
+}
+
+.panel--right {
+  @include panel-right($color-peach,$color-blue);
+}
