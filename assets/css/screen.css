@@ -141,7 +141,8 @@ textarea {
 
 a {
   color: #fcb79b;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; }
   a:hover, a:focus {
     color: #fb9369;
     text-decoration: none; }
@@ -405,11 +406,11 @@ sup {
 .info-block-list span {
   display: block; }
 
-.tagline {
+.footer {
   background-color: #fcb79b;
   color: #101e8e;
   text-align: center; }
-  .tagline:before {
+  .footer:before {
     content: "";
     background-color: #fcb79b;
     width: 100%;
@@ -425,6 +426,10 @@ sup {
     -o-transform: skewY(-4deg);
     -ms-transform: skewY(-4deg);
     transform: skewY(-4deg); }
+  .footer a {
+    color: #101e8e; }
+    .footer a:hover, .footer a:focus {
+      color: #101e8e; }
 
 .triangle {
   min-height: 200px; }
@@ -454,6 +459,17 @@ sup {
     background-color: #fcb79b; }
   .triangle-bottom.triangle-bottom--blue {
     background-color: #101e8e; }
+
+.social-icons .fa {
+  border: 2px solid #101e8e;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center; }
+  .social-icons .fa:hover {
+    background-color: #101e8e;
+    color: #fcb79b; }
 
 ol,
 ul {

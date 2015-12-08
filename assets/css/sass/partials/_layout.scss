@@ -158,7 +158,7 @@
   }
 }
 
-.tagline {
+.footer {
   background-color: $color-peach;
   color: $color-blue;
   text-align: center;
@@ -178,6 +178,13 @@
     -o-transform: skewY(-4deg);
     -ms-transform: skewY(-4deg);
     transform: skewY(-4deg);
+  }
+  a {
+    color: $color-blue;
+    &:hover,
+    &:focus {
+      color: $color-blue;
+    }
   }
 }
 
@@ -215,5 +222,20 @@
   }
   &.triangle-bottom--blue {
     background-color: $color-blue;
+  }
+}
+
+// Social Icons
+//Make 'em round!
+.social-icons .fa {
+  border: 2px solid $color-blue;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  &:hover {
+    background-color: $color-blue;
+    color: $color-peach;
   }
 }
