@@ -17,3 +17,7 @@
 .panel--right {
   @include panel-right($color-peach,$color-blue);
 }
+
+.vcenter {
+  @include vcenterer;
+}

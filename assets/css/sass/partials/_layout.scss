@@ -16,7 +16,6 @@
 // Header
 .header {
   height: 60px;
-  margin-bottom: rhythm();
   position: relative;
 }
 
@@ -36,7 +35,13 @@
 
 // Sections
 .banner {
+  height: 106vh;
   text-align: center;
+  .banner-content {
+    margin-top: -60px;
+    padding: 0 gutter();
+    width: 100%;
+  }
 }
 
 .info {
