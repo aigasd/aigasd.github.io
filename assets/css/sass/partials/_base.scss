@@ -11,7 +11,7 @@ body {
 
 body {
   background:
-    url(../img/bg-figures.jpg)
+    url(../img/bg-body.jpg)
     top center / cover
     no-repeat
     fixed
@@ -21,6 +21,7 @@ body {
   font-size: $font-size-base;
   font-weight: $font-weight-light;
   line-height: $line-height-base;
+  text-align: center;
 }
 
 ::selection {

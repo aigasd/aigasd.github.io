@@ -3,7 +3,7 @@
 <!-- For social icon x-browser compatability -->
 <script src="assets/webfonts/ss-social.js"></script>
 
-<!-- GSAP (necessary for ScrollMagic animations to work -->
+<!-- GSAP (necessary for ScrollMagic -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
 
 <!-- ScrollMagic -->
@@ -35,24 +35,6 @@
 </script>
 
 <!-- Custom JS -->
-<script>
-$(function() {
-
-  var sdegree = -55;
-
-  $(window).scroll(function() {
-    sdegree ++ ;
-    sdegree = sdegree + 1 ;
-    var srotate = "rotate(" + sdegree + "deg)";
-    $(".waves").css({
-      "transform" : srotate,
-      "transform-origin" : "50% 50%"
-    });
-  });
-
-});
-</script>
-
 <script>
 var $animation_elements = $('.animated');
 var $window = $(window);

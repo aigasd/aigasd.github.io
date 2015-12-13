@@ -15,35 +15,7 @@
   color: $color-green;
 }
 
-.panel--right {
-  @include panel-right($color-peach,$color-blue);
-}
-
+// Vertically Center
 .vcenter {
   @include vcenterer;
-}
-
-// Triangles
-.triangle-top {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top: 0;
-  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
-  clip-path: polygon(100% 0, 0 0, 0 100%);
-}
-
-.triangle-bottom {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top: 0;
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(100% 0, 100% 100%, 0 100%);
-}
-
-.triangle--peach {
-  background-color: $color-peach;
 }

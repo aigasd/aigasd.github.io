@@ -11,11 +11,6 @@ ul {
 
 // List options
 
-// [converter] extracted from `.list-unstyled` for libsass compatibility
-@mixin list-unstyled {
-  padding-left: 0;
-  list-style: none;
-}
 // [converter] extracted as `@mixin list-unstyled` for libsass compatibility
 .list-unstyled {
   @include list-unstyled;
@@ -50,12 +45,17 @@ dd {
   margin-left: 0;
 }
 
-// Tags list
-.popularity {
+// Custom List styles
+.info-block-list {
   li {
-    display: inline-block;
-    line-height: 48px;
-    margin: 0 5px;
-    vertical-align: text-bottom;
+    margin-bottom: rhythm(1/2);
   }
+  span {
+    display: block;
+  }
+}
+
+// Social Icons
+.social-icons {
+  @include adjust-font-size-to($font-size-h2);
 }

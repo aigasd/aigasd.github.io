@@ -3,32 +3,6 @@
   height: 100%;
 }
 
-//For SVG
-.panel,
-svg {
-  width: 100%;
-  height: 100%;
-  height: 100vh;
-  position: absolute;
-}
-
-.panel {
-  z-index: 1;
-}
-
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  height: 100vh;
-  z-index: 2;
-  .overlay-content {
-    @include vcenterer;
-    text-align: center;
-    width: 100%;
-  }
-}
-
 .section {
   padding-bottom: 8%;
   padding-top: 4%;
@@ -54,89 +28,23 @@ svg {
 
 .container {
   @include container(1140px);
-  padding: 8% gutter();
+  padding: 8%;
   overflow: hidden;
   position: relative;
 }
 
-// Header
-.header {
-  height: 60px;
+// Overlay and Animated Panels
+.overlay {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-}
-
-// Sections
-.banner {
-  height: 500px; // Fallback
-  height: 106vh;
-  text-align: center;
-  .banner-content {
-    margin-top: -60px;
-    padding: 0 gutter();
+  height: 100%;
+  z-index: 2;
+  .overlay-content {
+    @include vcenterer;
     width: 100%;
   }
-}
-
-.cta {
-  background-color: $color-peach;
-  text-align: center;
-  &:before {
-    background-color: $color-peach;
-    transform: skewY(4deg);
-  }
-}
-
-.info {
-  background-color: $color-blue;
-  background: url(../img/background-info.svg) 100% 100% no-repeat $color-blue;
-  background-size: cover;
-  &:before {
-    background-color: $color-blue;
-    transform: skewY(4deg);
-  }
-}
-
-.date {
-  color: $color-blue;
-  background-color: $color-peach;
-  text-align: center;
-  &:before {
-    background-color: $color-peach;
-    transform: skewY(-4deg);
-  }
-}
-
-// wave pattern
-.waves { 
-  display: block;
-  position: absolute;
-  z-index: 1;
-  overflow: visible;
-  transform: rotate(-55deg);
-  width: 100%;
-  &.opposite {
-    transform: rotate(0deg);
-  }
-}
-
-// Logos
-.logo-aiga-sd {
-  background: url(../img/logo-aiga-san-diego.svg) no-repeat;
-  background-size: 160px 60px;
-  position: absolute;
-  width: 100%;
-  height: 60px;
-  z-index: 3;
-  span {
-    @include visuallyhidden;
-  }
-}
-
-.logo-distill {
-  margin: 0 auto;
-  margin-bottom: rhythm();
-  max-width: 250px;
 }
 
 .logo-y {
@@ -152,43 +60,93 @@ svg {
   }
 }
 
-// Blocks
-.info-block {
-  @media screen and (min-width: 768px) {
-    &:first-of-type {
-      margin-left: span(2 of 12);
-    }
+.panel-wrapper {
+  overflow: hidden;
+}
+
+.panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+// Header
+.header {
+  height: 60px;
+  position: absolute;
+  width: 100%;
+}
+
+.logo-aiga-sd {
+  background: url(../img/logo-aiga-san-diego.svg) no-repeat;
+  background-size: 160px 60px;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  z-index: 3;
+  span {
+    @include visuallyhidden;
   }
 }
 
-.info-block-list {
-  li {
-    margin-bottom: rhythm(1/2);
+// Sections
+.banner {
+  height: 500px; // Fallback
+  height: 100%;
+  .banner-content {
+    padding: 0 gutter();
+    width: 100%;
   }
-  span {
-    display: block;
+}
+
+.logo-distill {
+  margin: 0 auto;
+  margin-bottom: rhythm();
+  max-width: 250px;
+}
+
+.cta {
+  background-color: $color-peach;
+  &:before {
+    background-color: $color-peach;
+    transform: skewY(4deg);
+  }
+}
+
+.date {
+  color: $color-blue;
+  background-color: $color-peach;
+  &:before {
+    background-color: $color-peach;
+    transform: skewY(-4deg);
+  }
+}
+
+.speakers {
+  background:
+    url(../img/background-info.svg)
+    100% 100% / cover
+    no-repeat $color-blue;
+//    url(../img/bg-speakers.jpg)
+//    top center / cover
+//    no-repeat
+//    fixed;
+  text-align: left;
+  &:before {
+    background-color: $color-blue;
+    transform: skewY(4deg);
   }
 }
 
 // Footer
 .footer {
   background-color: $color-blue;
-  color: lighten($color-blue, 35);
-  text-align: center;
+  color: $color-peach;
   &:before {
     background-color: $color-blue;
     transform: skewY(4deg);
   }
-  a {
-    color: $color-peach;
-    &:hover,
-    &:focus {
-      color: $color-peach;
-    }
-  }
-}
-
-// Social Icons
-.social-icons {
-  @include adjust-font-size-to($font-size-h2);
 }
