@@ -284,6 +284,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/logo-y.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1051,
+		"inputAbbreviatedPath": "\/assets\/img\/logo-y.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logo-y.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/js\/main.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -481,48 +492,12 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1
 		},
-	"\/partials\/modules\/_form_newsletter.kit": {
-		"fileType": 2048,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/modules\/_form_newsletter.kit",
-		"outputAbbreviatedPath": "\/partials\/modules\/_form_newsletter.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/partials\/modules\/_info-block.kit": {
 		"fileType": 2048,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/partials\/modules\/_info-block.kit",
 		"outputAbbreviatedPath": "\/partials\/modules\/_info-block.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/partials\/modules\/_speaker-modal.kit": {
-		"fileType": 2048,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/modules\/_speaker-modal.kit",
-		"outputAbbreviatedPath": "\/partials\/modules\/_speaker-modal.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/partials\/modules\/_speaker.kit": {
-		"fileType": 2048,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/modules\/_speaker.kit",
-		"outputAbbreviatedPath": "\/partials\/modules\/_speaker.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/partials\/modules\/_svg.kit": {
-		"fileType": 2048,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/modules\/_svg.kit",
-		"outputAbbreviatedPath": "\/partials\/modules\/_svg.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -541,15 +516,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/partials\/sections\/_header.kit",
 		"outputAbbreviatedPath": "\/partials\/sections\/_header.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/partials\/sections\/_newsletter.kit": {
-		"fileType": 2048,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/sections\/_newsletter.kit",
-		"outputAbbreviatedPath": "\/partials\/sections\/_newsletter.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
