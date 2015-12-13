@@ -106,8 +106,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .vcenter {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translateY(-50%); }
 
 .triangle-top {
   position: absolute;
@@ -282,21 +281,24 @@ sup {
 
 .panel,
 svg {
-  height: 100%;
   width: 100%;
-  position: absolute;
+  height: 100%;
+  height: 100vh;
+  position: absolute; }
+
+.panel {
   z-index: 1; }
 
 .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
+  height: 100vh;
   z-index: 2; }
   .overlay .overlay-content {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     text-align: center;
     width: 100%; }
 
@@ -335,7 +337,8 @@ svg {
 
 .header {
   height: 60px;
-  position: relative; }
+  position: absolute;
+  width: 100%; }
 
 .banner {
   height: 500px;
@@ -383,9 +386,7 @@ svg {
   background: url(../img/logo-aiga-san-diego.svg) no-repeat;
   background-size: 160px 60px;
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 160px;
+  width: 100%;
   height: 60px;
   z-index: 3; }
   .logo-aiga-sd span {
