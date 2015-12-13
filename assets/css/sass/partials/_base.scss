@@ -10,7 +10,12 @@ body {
 }
 
 body {
-  background-color: $color-blue;
+  background:
+    url(../img/bg-figures.jpg)
+    top center / cover
+    no-repeat
+    fixed
+    $bg-color-base;
   color: $font-color-base;
   font-family: $font-family;
   font-size: $font-size-base;
