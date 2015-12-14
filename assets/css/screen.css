@@ -92,8 +92,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
-  text-align: center;
-  overflow-x: hidden; }
+  text-align: center; }
 
 ::-moz-selection {
   background: #fff;
@@ -229,14 +228,6 @@ sup {
   width: 100%;
   height: 100%; }
 
-#scroll-wrap {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  height: 100vh;
-  z-index: 5;
-  overflow: hidden; }
-
 .section {
   padding-bottom: 8%;
   padding-top: 4%;
@@ -303,6 +294,13 @@ sup {
     padding: 0;
     border: 0; }
 
+.panel-wrap {
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden; }
+
 .panel {
   position: absolute;
   top: 0;
@@ -312,7 +310,7 @@ sup {
   z-index: 1; }
 
 .intro-arrow {
-  position: fixed;
+  position: absolute;
   z-index: 99;
   bottom: -25px;
   left: 50%;
