@@ -30,7 +30,7 @@
 <meta name="msapplication-TileColor" content="#2d89ef">
 <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff"></head>
-<body>
+<body class="body">
 <header class="header" role="banner">
   <div class="logo-aiga-sd">
     <span>AIGA San Diego</span>
@@ -145,7 +145,7 @@
 <!-- ScrollMagic -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
-<!--
+
 <script>
   // init controller
   var controller = new ScrollMagic.Controller({
@@ -165,14 +165,14 @@
 
     // create scene to pin and link animation
     new ScrollMagic.Scene({
-      triggerElement: "#trigger",
+      triggerElement: "#main",
       duration: "100%"
     })
     .setPin("#main")
     .setTween(slideAnimation)
     .addTo(controller);
 </script>
--->
+
 <!-- Custom JS -->
 <script>
 var $animation_elements = $('.animated');
