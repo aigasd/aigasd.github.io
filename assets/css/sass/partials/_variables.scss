@@ -41,7 +41,7 @@ $font-weight-black: 800; // Adjust to match typeface
 // Headings
 $heading-font-family: freight-sans-compressed-pro, sans-serif;
 
-$font-size-h1: floor(($font-size-base * 3));
+$font-size-h1: floor(($font-size-base * 2.5));
 $font-size-h2: floor(($font-size-base * 1.75));
 $font-size-h3: ceil(($font-size-base * 1.15));
 

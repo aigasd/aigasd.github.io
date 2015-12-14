@@ -84,17 +84,16 @@
   width: 140px;
   margin-left: -70px;
   height: 120px;
-  cursor: pointer;
 }
 
 .intro-arrow_inner {
+  background: url(../img/icon-arrow-bottom.svg) no-repeat 50% 50%;
+  background-size: 43px 24px;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: url(http://antonandirene.com/build/images/ui/arrow-bottom.svg) no-repeat 50% 50%;
-  background-size: 43px 24px;
 }
 
 // Header
@@ -150,15 +149,17 @@
   }
 }
 
+.info-block {
+  @media screen and (min-width: 768px) {
+    @include gallery(4 of 12);
+  }
+}
+
 .speakers {
   background:
     url(../img/background-info.svg)
     100% 100% / cover
     no-repeat $color-blue;
-//    url(../img/bg-speakers.jpg)
-//    top center / cover
-//    no-repeat
-//    fixed;
   text-align: left;
   &:before {
     background-color: $color-blue;
@@ -168,7 +169,10 @@
 
 // Footer
 .footer {
-  background-color: $color-blue;
+  background:
+    url(../img/background-footer.svg)
+    0% 0% / cover
+    no-repeat $color-blue;
   color: $color-peach;
   &:before {
     background-color: $color-blue;
