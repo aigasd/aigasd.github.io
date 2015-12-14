@@ -22,6 +22,7 @@ body {
   font-weight: $font-weight-light;
   line-height: $line-height-base;
   text-align: center;
+  overflow-x: hidden;
 }
 
 ::selection {
