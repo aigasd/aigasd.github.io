@@ -29,10 +29,9 @@
 
     // create scene to pin and link animation
     new ScrollMagic.Scene({
-      triggerElement: "#main",
       duration: "100%"
     })
-    .setPin("#main")
+    .setPin("body")
     .setTween(slideAnimation)
     .addTo(controller);
 </script>

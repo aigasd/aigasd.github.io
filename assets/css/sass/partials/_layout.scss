@@ -40,7 +40,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: 99;
   .overlay-content {
     @include vcenterer;
     width: 100%;
@@ -61,18 +61,6 @@
 }
 
 .panel-wrap {
-  width: 100%;
-  height: 100%;
-  height: 100vh;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  overflow: hidden;
-}
-
-.panel {
   position: absolute;
   top: 0;
   left: 0;
@@ -81,8 +69,17 @@
   z-index: 1;
 }
 
-.intro-arrow {
+.panel {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.intro-arrow {
+  position: fixed;
   z-index: 99;
   bottom: -25px;
   left: 50%;
@@ -156,14 +153,15 @@
 
 .info-block {
   @media screen and (min-width: 768px) {
-    @include gallery(4 of 12);
+    @include gallery(6 of 12);
   }
 }
 
-.speakers {
+.speakers,
+.sessions {
   background:
     url(../img/background-info.svg)
-    100% 100% / cover
+    100% 50% / cover
     no-repeat $color-blue;
   text-align: left;
   &:before {

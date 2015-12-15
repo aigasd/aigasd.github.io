@@ -31,7 +31,7 @@
 <meta name="msapplication-TileColor" content="#2d89ef">
 <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff"></head>
-<body class="body">
+<body>
 <header class="header" role="banner">
   <div class="logo-aiga-sd">
     <span>AIGA San Diego</span>
@@ -87,10 +87,9 @@
 
     // create scene to pin and link animation
     new ScrollMagic.Scene({
-      triggerElement: "#main",
       duration: "100%"
     })
-    .setPin("#main")
+    .setPin("body")
     .setTween(slideAnimation)
     .addTo(controller);
 </script>

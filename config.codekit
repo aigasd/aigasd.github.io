@@ -834,6 +834,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/partials\/sections\/_sessions.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/partials\/sections\/_sessions.kit",
+		"outputAbbreviatedPath": "\/partials\/sections\/_sessions.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/partials\/sections\/_speakers.kit": {
 		"fileType": 2048,
 		"ignore": 1,
