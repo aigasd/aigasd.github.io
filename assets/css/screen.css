@@ -279,11 +279,11 @@ sup {
 .logo-y {
   background-image: url(../img/logo-y.png);
   background-image: url(../img/logo-y.svg);
-  background-size: 93px 100px;
+  background-size: 200px 125px;
   background-repeat: no-repeat;
   margin: 0 auto 1.5rem;
-  width: 93px;
-  height: 100px; }
+  width: 200px;
+  height: 125px; }
   .logo-y span {
     position: absolute;
     overflow: hidden;
@@ -382,17 +382,18 @@ sup {
 
 @media screen and (min-width: 768px) {
   .info-block {
-    width: 49.15254%;
+    width: 57.62712%;
     float: left; }
-    .info-block:nth-child(2n + 1) {
+    .info-block:nth-child(1n + 1) {
       margin-left: 0;
       margin-right: -100%;
       clear: both;
       margin-left: 0; }
-    .info-block:nth-child(2n + 2) {
-      margin-left: 50.84746%;
-      margin-right: -100%;
-      clear: none; } }
+    .info-block p {
+      font-size: 18px;
+      font-size: 1.125rem;
+      line-height: 24px;
+      line-height: 1.5rem; } }
 
 .speakers,
 .sessions {

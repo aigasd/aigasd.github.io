@@ -50,11 +50,11 @@
 .logo-y {
   background-image: url(../img/logo-y.png);
   background-image: url(../img/logo-y.svg);
-  background-size: 93px 100px;
+  background-size: 200px 125px;
   background-repeat: no-repeat;
   margin: 0 auto rhythm();
-  width: 93px;
-  height: 100px;
+  width: 200px;
+  height: 125px;
   span {
     @include visuallyhidden;
   }
@@ -153,7 +153,10 @@
 
 .info-block {
   @media screen and (min-width: 768px) {
-    @include gallery(6 of 12);
+    @include gallery(7 of 12);
+    p {
+      @include adjust-font-size-to(18px);
+    }
   }
 }
 
