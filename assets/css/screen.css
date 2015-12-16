@@ -397,7 +397,7 @@ sup {
 
 .speakers,
 .sessions {
-  background: url(../img/background-info.svg) 100% 50%/cover no-repeat #101e8e;
+  background: url(../img/background-info.svg) 78% 100%/cover no-repeat #101e8e;
   text-align: left; }
   .speakers:before,
   .sessions:before {
@@ -405,6 +405,10 @@ sup {
     -webkit-transform: skewY(4deg);
         -ms-transform: skewY(4deg);
             transform: skewY(4deg); }
+  @media screen and (min-width: 768px) {
+    .speakers,
+    .sessions {
+      background-position: 100% 100%; } }
 
 .footer {
   background: url(../img/background-footer.svg) 0% 0%/cover no-repeat #101e8e;

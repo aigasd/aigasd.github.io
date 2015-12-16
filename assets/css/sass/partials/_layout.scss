@@ -169,12 +169,15 @@
 .sessions {
   background:
     url(../img/background-info.svg)
-    100% 50% / cover
+    78% 100% / cover
     no-repeat $color-blue;
   text-align: left;
   &:before {
     background-color: $color-blue;
     transform: skewY(4deg);
+  }
+  @media screen and (min-width: 768px) {
+    background-position: 100% 100%;
   }
 }
 
