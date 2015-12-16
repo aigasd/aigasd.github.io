@@ -399,7 +399,7 @@
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/css\/sass\/partials\/animate.scss",
 		"outputAbbreviatedPath": "\/assets\/css\/animate.css",
