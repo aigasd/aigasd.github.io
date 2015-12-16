@@ -150,10 +150,17 @@
 }
 
 .info-block {
-  @media screen and (min-width: 768px) {
-    @include gallery(7 of 12);
-    p {
-      @include adjust-font-size-to(18px);
+  &:first-of-type {
+    @media screen and (min-width: 768px) {
+      @include span(4 of 12);
+    }
+  }
+  &:last-of-type {
+    @media screen and (min-width: 768px) {
+      @include span(last 8 of 12);
+    }
+    @media screen and (min-width: 960px) {
+      @include span(6.5 of 12);
     }
   }
 }
