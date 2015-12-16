@@ -225,7 +225,6 @@ sup {
   top: -1.5em; }
 
 #main {
-  width: 100%;
   height: 100%; }
 
 .section {
@@ -300,7 +299,9 @@ sup {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1; }
+  height: 100vh;
+  z-index: 1;
+  overflow: hidden; }
 
 .panel {
   position: absolute;
@@ -353,7 +354,8 @@ sup {
 
 .banner {
   height: 500px;
-  height: 100%; }
+  height: 100%;
+  height: 100vh; }
   .banner .banner-content {
     padding: 0 1.69492%;
     width: 100%; }
