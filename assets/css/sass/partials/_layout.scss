@@ -1,7 +1,3 @@
-#main {
-  height: 100%;
-}
-
 .section {
   padding-bottom: 8%;
   padding-top: 4%;
@@ -49,11 +45,11 @@
 .logo-y {
   background-image: url(../img/logo-y.png);
   background-image: url(../img/logo-y.svg);
-  background-size: 200px 125px;
+  background-size: 130px 81px;
   background-repeat: no-repeat;
-  margin: 0 auto rhythm();
-  width: 200px;
-  height: 125px;
+  margin: 0 auto rhythm(4);
+  width: 130px;
+  height: 81px;
   span {
     @include visuallyhidden;
   }
@@ -76,7 +72,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  height: 100vh;
   z-index: 2;
 }
 
