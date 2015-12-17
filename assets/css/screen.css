@@ -478,6 +478,7 @@ dd {
   transition-property: background;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.08);
   background-color: #ff6c36;
   border: 1px solid transparent;
   color: #ffffff;

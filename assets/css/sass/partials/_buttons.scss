@@ -4,6 +4,7 @@
   @include inline-block(middle);
   @include transition-property(background);
   @include transition-duration(.3s);
+  @include card(1); // Drop shadow
 
   background-color: $btn-bgcolor;
   border: 1px solid transparent;
